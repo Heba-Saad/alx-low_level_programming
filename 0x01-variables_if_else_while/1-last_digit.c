@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
 *main - Entry point
-* Return: Always 0 (Success)
+*Return: Always 0 (Success)
 */
 int main(void)
 {
@@ -22,5 +22,5 @@ else
 {
 printf("last digit of %d is %d and is 0\n", n, n % 10);
 }
-return (0);
+return (0);
 }
