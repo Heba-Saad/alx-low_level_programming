@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
-*main - prints the alphapet
-*
-*return : Always 0 (success)
+* main - Entry point
+* Return: Always 0 (Success)
 */
 int main(void)
 {
