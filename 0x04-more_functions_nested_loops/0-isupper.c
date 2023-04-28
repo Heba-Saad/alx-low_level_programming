@@ -1,13 +1,17 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _putchar - Function to print a character
- * @c: character to be printed
- * Return: void
+ * _isupper - uppercase letters
+ * @c: character to check
+ *
+ * Return: 0 or 1
  */
+int _isupper(int c)
 
-void _putchar(char c)
 {
-	putchar(c);
+if (c >= 'A' && c <= 'Z')
+return (1);
+else
+return (0);
+
 }
