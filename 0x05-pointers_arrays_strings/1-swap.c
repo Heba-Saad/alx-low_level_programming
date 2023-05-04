@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /*
  * File: 1-swap.c
  * Auth: Brennan D Baraban
