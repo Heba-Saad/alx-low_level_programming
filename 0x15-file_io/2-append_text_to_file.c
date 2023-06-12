@@ -1,18 +1,18 @@
 #include "main.h"
 /**
- * create_file - create a file
- * @filename: file name
- * @text_content: li text content
- * Return: 1 if sucess or -1 if an error ocurred
-*/
-int create_file(const char *filename, char *text_content)
+ * append_text_to_file - appends text to file
+ * @filename: filename pointer
+ * @text_content: text
+ * Return: 1 on success and -1 on failure
+ */
+int append_text_to_file(const char *filename, char *text_content)
 {
-	int cr, wr;
+int cr, wr;
 
 	if (filename == NULL)
 		return (-1);
 
-	cr = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+	cr = open(filename, O_RDWR | O_APPEND);
 
 	if (cr == -1)
 		return (-1);
@@ -23,7 +23,6 @@ int create_file(const char *filename, char *text_content)
 	wr = write(cr, text_content, strlen(text_content));
 	if (wr == -1)
 	{
-		close(cr);
 		return (-1);
 	}
 	close(cr);
